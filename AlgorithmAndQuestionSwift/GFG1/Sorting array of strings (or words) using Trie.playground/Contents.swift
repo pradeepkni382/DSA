@@ -36,7 +36,7 @@ class Trie {
   }
     
     
-    func insert(word: String) {
+func insert(word: String) {
       guard !word.isEmpty else { return }
       
       var currentNode = root
@@ -61,9 +61,9 @@ class Trie {
           currentNode.isTerminating = true
         }
       }
-    }
+}
     
-    func contains(word: String) -> Bool {
+func contains(word: String) -> Bool {
       guard !word.isEmpty else { return false }
       
       var currentNode = root
@@ -83,6 +83,7 @@ class Trie {
       }
     }
 }
+
 
 
 
