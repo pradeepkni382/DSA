@@ -24,7 +24,7 @@ func getSS(_ str: String) -> [String] {
     var allSubsequences: [String] = []
     for subsequence in restSubsequences {
         allSubsequences.append(subsequence)
-        allSubsequences.append(String(firstChar) + subsequence)
+        allSubsequences.append(String(firstChar) + subsequence) //note::Important append subsequence inlist lator append first char to have subsequence with first char
     }
     
     return allSubsequences
