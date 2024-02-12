@@ -18,7 +18,7 @@ func getStairPath(_ numberofstairs:Int) -> [String] {
     //Recursive cases: calucalate all possoble paths by taking 1,2,3 steps
     let pathontaking1step = getStairPath(numberofstairs-1)
     let pathontaking2step = getStairPath(numberofstairs-2)
-    let pathontaking3step = getStairPath(numberofstairs-3)
+    let pathontaking3step = getStairPath(numberofstairs-3) // since guy can take max of 3 steps 
     
     //combine all the currnet steps wiht all the possible paths from the previous steps.
     var allPath: [String] = []

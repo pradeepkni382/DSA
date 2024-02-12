@@ -43,7 +43,7 @@ func longestPalindromicDP(inputStr: String){
     var table = Array(repeating: Array(repeating: false, count: strlen), count: strlen)
     // All substrings of length 1 are palindromes
     var maxLength = 1;
-    for gap in 0..<strlen {
+    for gap in 0..<strlen { // gap is diagonal in 2 d array
         var i = 0
         for j in gap..<strlen {
             if gap == 0 {

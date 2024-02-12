@@ -48,9 +48,9 @@ func floodfill(_ a: [[Int]]) {
 
 // Example usage
 let grid = [
-    [0, 0, 0],
-    [1, 0, 1],
-    [0, 0, 0]
+    [1, 0, 0],
+    [1, 1, 0],
+    [0, 0, 1]
 ]
 
 floodfill(grid)
